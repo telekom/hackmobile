@@ -42,4 +42,4 @@ Examples and documentation for the T-Mobile Österreich Hackathon on 21/22 March
   Your laptop, smartphone, fun, Inventiveness and flair for innovation, persistence. Feel free to bring your own IoT Hardware (RaspberryPi, Arduino und Co.)
 
 ## License
-All documentation and examples for the T-Mobile Österreich Hackathon ([**#hackmobile**](https://twitter.com/hashtag/hackmobile)) are distributed under the conditions of the MIT license. For details see the [LICENSE file](LICENSE).
+All documentation and examples for the T-Mobile Austria Hackathon 2018 ([**#hackmobile**](https://twitter.com/hashtag/hackmobile)) are distributed under the conditions of the MIT license. For details see the [LICENSE file](LICENSE).
