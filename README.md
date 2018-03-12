@@ -25,7 +25,7 @@ Examples and documentation for the T-Mobile Österreich Hackathon on 21/22 March
 ## FAQ
 * **Is the Hackathon open source?**  
   Yes, the data and software you use during the hackathon are completely open source.  
-* **Is there are price for the first place?**
+* **Is there are price for the first place?**  
   Cool prices (1. place: € 3.000,00 / 2. place: € 2.000,00 / 3. place: € 1.000,00)
 * **When and where will the Hackathon take place?**  
   **Event start**: Tuesday, March 21, 2018 at 09:00 a.m.  
