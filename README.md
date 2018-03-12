@@ -28,10 +28,10 @@ Examples and documentation for the T-Mobile Österreich Hackathon on 21/22 March
 * **Is there are price for the first place?**
   Cool prices (1. place: € 3.000,00 / 2. place: € 2.000,00 / 3. place: € 1.000,00)
 * **When and where will the Hackathon take place?**  
-  Event start: Tuesday, March 21, 2018 at 09:00 a.m.  
-  Event end: Wednesday, September 22, 2018 at approx. 12:00 p.m.  
-  Event location:  
-  Fachhochschule St. Pölten ([fhstp.ac.at](fhstp.ac.at))  
+  **Event start**: Tuesday, March 21, 2018 at 09:00 a.m.  
+  **Event end**: Wednesday, March 22, 2018 at approx. 12:00 p.m.  
+  **Event location**:  
+  Fachhochschule St. Pölten ([fhstp.ac.at](https://fhstp.ac.at))  
   [Matthias Corvinus-Straße 15](https://goo.gl/vMRoXt)  
   3100 St. Pölten, Österreich
 * **What is the topic of the hackathon?**  
