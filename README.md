@@ -3,7 +3,7 @@
 ![Hackathon Smart Public Life](assets/hackathon_banner.jpg)
 
 
-### Was passiert dort?
+### What's going on there?
 In this 24-hour hackathon, you develop cool ideas for an innovative city under the motto "Smart Public Life". Make life in St. Pölten easier and more enjoyable for the citizens. A wide variety of topics, technologies and data are waiting for you to help you develop innovative ideas.
 
 You can find more information on the [official site](https://business.t-mobile.at/kleinunternehmen/events/hackathon-smartpubliclife.php)
@@ -28,11 +28,11 @@ Examples and documentation for the T-Mobile Österreich Hackathon on 21/22 March
 * **Is there are price for the first place?**
   Cool prices (1. place: € 3.000,00 / 2. place: € 2.000,00 / 3. place: € 1.000,00)
 * **When and where will the Hackathon take place?**  
-  Event start: Tuesday, March 21, 2018 at 09:00 a.m.
-  Event end: Wednesday, September 22, 2018 at approx. 12:00 p.m.
-  Event location:
-  Fachhochschule St. Pölten ([fhstp.ac.at](fhstp.ac.at))
-  [Matthias Corvinus-Straße 15](https://goo.gl/vMRoXt)
+  Event start: Tuesday, March 21, 2018 at 09:00 a.m.  
+  Event end: Wednesday, September 22, 2018 at approx. 12:00 p.m.  
+  Event location:  
+  Fachhochschule St. Pölten ([fhstp.ac.at](fhstp.ac.at))  
+  [Matthias Corvinus-Straße 15](https://goo.gl/vMRoXt)  
   3100 St. Pölten, Österreich
 * **What is the topic of the hackathon?**  
   This time, the topic is IoT (Internet of Things): The focus is on connected life in the city (Smart Public Life). IoT boards, sensors, and everything the IoT heart desires. The mission is: to make life in the city more convenient, simpler, and more livable for citizens. But without reinventing the smart street light for the thousandth time.

@@ -5,7 +5,7 @@ Luckily there are already a hand full of sensor provided on the calliope board i
 * Environment-Sensors: Motion, acceleration, temperature, and ambient light sensors, compass
 * Bluetooth and the seperate NB-IoT-Module
 
-More information can be found in the calliope docu [here](calliope.md#the-iot-board-contains-the-following-components) and [here](https://calliope.cc/en/ueber-mini)
+More information can be found in the calliope docu [here](calliope.md#the-iot-board-contains-the-following-components) and [here](https://calliope.cc/idee/ueber-mini)
 
 # Additional Sensors
 We also order a few extra sensor for the event. A list and all needed informations can be found [here](https://github.com/ubirch/telekom-nbiot-hackathon-2017/blob/master/sensors.md).  
