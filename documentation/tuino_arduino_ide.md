@@ -19,4 +19,4 @@ The Board Manager dialog box will appear, type in the search text box the word T
 <img src="https://raw.githubusercontent.com/gimasi/TUINO_ONE/master//docs/arduino_ide_5.png"><br/><br/>
 8) You are now ready to start working with your first examples<br/>
 <br/>
-Find [here](../tuino_example_sketch/) the initial template sketch.<br/>
+Find [here](/documentation/tuino_example_sketch/) the initial template sketch.<br/>
