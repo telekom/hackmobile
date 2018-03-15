@@ -21,6 +21,13 @@ Examples and documentation for the T-Mobile Österreich Hackathon on 21/22 March
 * [Official Repo for the Hackathon from the calliope team with detailed description and additional source code. ALSO A MUST READ!!1!](https://github.com/ubirch/telekom-nbiot-hackathon-2017)
 
 ## Tuino Kit
+* [Tuino 1](documentation/tuino.md)
+* [Arduino IDE and Tuino 1](documentation/tuino_arduino_ide.md)
+* [Basic Sensors](documentation/tuino_sensors.md)
+* [Example Sketch](documentation/tuino_example_sketch)
+* [GMX-NBIoT Module](documentation/gmx_nbiot.md)
+* [GMX-Wifi Module](documentation/gmx_wifi.md)
+
 
 ## FAQ
 * **Is the Hackathon open source?**  
