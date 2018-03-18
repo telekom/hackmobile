@@ -1,16 +1,16 @@
 # GMX Wifi Module
 
 The GMX WiFi module is based on the Atmel ATWINC1500 so its compatible with the Arduino [WIFI101](https://www.arduino.cc/en/Reference/WiFi101) library.<br/><br/>
-<img src="https://raw.githubusercontent.com/gimasi//assets/gmx_wifi.png"/>
+<img src="https://raw.githubusercontent.com/gimasi/GMX-WIFI/assets/gmx_wifi.png"/>
 <br/>
 <br/>
 To install the Wifi101 library you need to go to the Manage Library menu option. Sketch->Include Library->Manage Libraries...
 <br/><br/>
-<img src="https://raw.githubusercontent.com/gimasi//assets/install1.png"/>
+<img src="https://raw.githubusercontent.com/gimasi/GMX-WIFI/assets/install1.png"/>
 <br/>
 <br/>
 Then type in the search text area 'Wifi101'
-<img src="https://raw.githubusercontent.com/gimasi//assets/install2.png"/>
+<img src="https://raw.githubusercontent.com/gimasi/GMX-WIFI/assets/install2.png"/>
 <br/>
 <br/>
 And finally click install.<br/>
