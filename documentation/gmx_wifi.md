@@ -15,7 +15,7 @@ Then type in the search text area 'Wifi101'
 <br/>
 And finally click install.<br/>
 Once installed you are ready to go, you can try one of the examples that come with the Library.<br/><br/>
-*Remember* You need to configure the Wifi module with the correct pins of the Tuino, this is what you need to execute in the setup function your sketch
+<b>Remember</b> You need to configure the Wifi module with the correct pins of the Tuino, this is what you need to execute in the setup function of your sketch:
 ```c
 
 void setup() {
