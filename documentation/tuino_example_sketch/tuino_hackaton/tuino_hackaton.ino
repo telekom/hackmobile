@@ -159,12 +159,7 @@ void sendUbirchPacket(char *data_to_send)
     ubirch_packet[3] = devAddress[5];
     ubirch_packet[4] = devAddress[6];
     ubirch_packet[5] = devAddress[7];
-    
-    ubirch_packet[2] = 0x11;
-    ubirch_packet[3] = 0x11;
-    ubirch_packet[4] = 0x11;
-    ubirch_packet[5] = 0x11;
-    
+
     ubirch_packet[6] = 0xD9;
 
     Serial.println("Sending Data to Ubirch");
@@ -205,15 +200,11 @@ void sendUbirchPacket(char *data_to_send)
    * End Debug
    */
 
-    Serial.println("Sending to:");
-    Serial.println(ubirch_ip);
-    Serial.println(ubirch_port);
-    
-
+   
     if ( gmxNB_TXData(nbiot_payload) == GMXNB_OK )
-      Serial.println("OK");
+      Serial.println("TX OK");
     else
-      Serial.println("KO");
+      Serial.println("TX KO");
 
 
  }
