@@ -79,8 +79,7 @@ void setup() {
   delay(5000);
   
   // Init NB IoT board
-//  gmxNB_init("5.79.89.1","9200",NULL);
-  gmxNB_init("34.248.246.47","7070",NULL);
+  gmxNB_init("34.248.246.47","7070");
   
 
 
@@ -141,45 +140,92 @@ void setup() {
 }
 
 
-void sendUbirchMessageFloat( char *key, float value )
+// Ubirch packet Functions
+
+void sendUbirchPacket(char *data_to_send)
 {
-  unsigned char tx_buffer[512];
-  char payload[256];
-  int payload_len;
-  String payload_nbiot;
-   char string_byte[16];
-  
-  tx_buffer[0] = 0x00;
-  tx_buffer[1] = 0xCE;
-  tx_buffer[2] = devAddress[4];
-  tx_buffer[3] = devAddress[5];
-  tx_buffer[4] = devAddress[6];
-  tx_buffer[5] = devAddress[7];
-  tx_buffer[6] = 0xD9;
-  
+    unsigned char ubirch_packet[512];
+    char payload[500];
+    int payload_len;
+    
+    String nbiot_payload;
+    char string_byte[3];
+    
+    ubirch_packet[0] = 0x00;
+    ubirch_packet[1] = 0xCE;
+    
+    
+    ubirch_packet[2] = devAddress[4];
+    ubirch_packet[3] = devAddress[5];
+    ubirch_packet[4] = devAddress[6];
+    ubirch_packet[5] = devAddress[7];
 
+    ubirch_packet[6] = 0xD9;
 
-  sprintf(payload,"{\"%s\":%d}",key,value);
-  Serial.println( payload );
-  payload_len = strlen(payload);
-  Serial.println( payload_len );
+    Serial.println("Sending Data to Ubirch");
+    strcpy(payload,data_to_send);
+    Serial.println(payload);
+    payload_len = strlen( payload );
 
-  tx_buffer[7] = payload_len;
-  
-  for(int i=0; i<payload_len;i++)
-    tx_buffer[8+i]=payload[i];
+    Serial.print("Payload Len:");
+    Serial.println(payload_len);
+    
+    ubirch_packet[7] = payload_len;
 
-  for (int i=0;i<payload_len+8;i++)
+    for(int i=0;i<payload_len;i++ )
+      ubirch_packet[8+i] = payload[i];
+
+  /* 
+   *  Debug
+   */
+
+ for (int i=0;i<payload_len+8;i++)
   {  
-    sprintf(string_byte,"%02x",tx_buffer[i]);
-    payload_nbiot = payload_nbiot + string_byte;
+    sprintf(string_byte,"%02x",ubirch_packet[i]);
+    Serial.print((char)ubirch_packet[i]);
+    Serial.print("=");
+    Serial.print(ubirch_packet[i],HEX);
+    Serial.print("/");
+    Serial.println(string_byte);
+    
+    
+    
+    nbiot_payload = nbiot_payload + string_byte;
   } 
+
+  Serial.print("NBIoT Payload:");
+  Serial.println(nbiot_payload);
   
-  Serial.println( payload_nbiot );
-  if ( gmxNB_TXData(payload_nbiot) == GMXNB_OK )
-    Serial.println("OK");
-  else
-    Serial.println("KO");
+  /*
+   * End Debug
+   */
+
+   
+    if ( gmxNB_TXData(nbiot_payload) == GMXNB_OK )
+      Serial.println("TX OK");
+    else
+      Serial.println("TX KO");
+
+
+ }
+
+
+void sendUbirchInt(char *key, int value)
+{
+   char payload[500];
+   sprintf(payload,"{\"%s\":%d}",key,value);
+
+   sendUbirchPacket(payload);
+}
+
+
+void sendUbirchText(char *key, char *string)
+{
+   char payload[500];
+   sprintf(payload,"{\"%s\":\"%s\"}",key,string);
+
+   sendUbirchPacket(payload);
+
 }
 
 
@@ -199,7 +245,7 @@ void loop() {
     Serial.println("TX DATA");
 
     displayTX(true);
-    sendUbirchMessageFloat( "temperature", temperature_int );
+    sendUbirchInt( "temperature", temperature_int );
 
     timer_millis_tx = millis();
 

@@ -158,7 +158,7 @@ byte _parseResponse(String& response) {
 
 /* GMXLR Commands Interface */
 
-byte gmxNB_init(String upd_addre, String udp_port, void( *callback)()) 
+byte gmxNB_init(String upd_addre, String udp_port ) 
 {
     String response;
     byte init_status = GMXNB_KO;
@@ -196,8 +196,6 @@ byte gmxNB_init(String upd_addre, String udp_port, void( *callback)())
     *digitalPinToPCICR(GMX_INT) |= (1<<digitalPinToPCICRbit(GMX_INT));
     *digitalPinToPCMSK(GMX_INT) |= (1 << digitalPinToPCMSKbit(GMX_INT));
 
-    // set RX callback
-    _NBRing = callback;
 
     // delay to wait BootUp of GMX-LR
     delay(GMX_BOOT_DELAY);
