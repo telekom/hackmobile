@@ -7,13 +7,13 @@ This example sketch will use both the temperature and Oled screen present in the
 In the project you will find the gmx_nbiot.cpp and gmx_nbiot.h libraries that will enable you to connect to the NBIoT network.<br/>The libraries are already configured to work with T-Mobile Austria network.
 The usage is very simple, essentially you need only 3 functions:<br/>
 
-  * gmxNB_init(String udp_ip,String up_port);
+  * gmxNB_init(String udp_ip,String up_port);<br/>
   Setup the NBIoT library with the IP and PORT endpoint where data has to be transmitted.
 
-  * gmxNB_start();
+  * gmxNB_start();<br/>
   Start the NBIoT stack - in the library you will find the configuration for the T-Mobile Austria network ( if you want to connect to another network you need to change the configuration in the source: APN and OPS number).
 
-  * gmxNB_TXData(String payload);
+  * gmxNB_TXData(String payload);<br/>
   Transmit the hexdecimal string in payload to the UDP endpoint.
 
 In the sketch you will also find some example of function that send an <b>int</b> or <b>text</b> payload to Ubirch.
