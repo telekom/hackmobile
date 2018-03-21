@@ -28,6 +28,8 @@ Examples and documentation for the T-Mobile Österreich Hackathon on 21/22 March
 * [GMX-NBIoT Module](documentation/gmx_nbiot.md)
 * [GMX-Wifi Module](documentation/gmx_wifi.md)
 
+## NB-IoT Modul (Quectel BC-95) Documentation
+* [Quectel BC-95](documentation/documents/Quectel_BC95_AT_Commands_Manual_V1.6.pdf)
 
 ## FAQ
 * **Is the Hackathon open source?**  
